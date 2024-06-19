@@ -7,13 +7,11 @@ import {
   Param,
   Delete,
   HttpCode,
-  UseGuards,
   UseFilters,
 } from '@nestjs/common';
 import { CreateEventDto } from './dto/create-event.dto';
 import { UpdateEventDto } from './dto/update-event.dto';
 import { ReserveSpotDto } from './dto/reserve-spot.dto';
-import { AuthGuard } from '../auth/auth.guard';
 import { EventsService } from './events.service';
 import { HttpExceptionFilter } from 'src/http-exception/http-exception.filter';
 

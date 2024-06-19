@@ -13,6 +13,7 @@ export class ReserveSpotDto {
   @ArrayMinSize(1)
   spots: string[]; //['A1', 'A2']
 
+  @IsNotEmpty()
   @IsEnum(TicketKind)
   ticket_kind: TicketKind;
   email: string;
