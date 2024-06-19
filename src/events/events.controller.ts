@@ -48,7 +48,6 @@ export class EventsController {
   }
 
   @UseFilters(new HttpExceptionFilter())
-  @UseGuards(AuthGuard)
   @Post(':id/reserve')
   reserveSpots(
     @Body() reservedto: ReserveSpotDto,
